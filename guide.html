@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Fix a Slow Laptop - FixIt</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="guide-styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <a href="index.html" class="logo">FixIt</a>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <h5 class="nav-title">MAIN MENU</h5>
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="index.html">
+                <i class="bi bi-house"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="my-troubleshooting.html">
+                <i class="bi bi-tools"></i>
+                <span>My Troubleshooting</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="history.html">
+                <i class="bi bi-clock-history"></i>
+                <span>History</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="saved-guides.html">
+                <i class="bi bi-bookmark"></i>
+                <span>Saved Guides</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="nav-section">
+          <h5 class="nav-title">CATEGORIES</h5>
+          <ul class="nav-items" id="category-nav">
+            <!-- Categories will be loaded here via JavaScript -->
+          </ul>
+        </div>
+        
+        <div class="nav-section">
+          <h5 class="nav-title">SUPPORT</h5>
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="help-center.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Help Center</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="settings.html">
+                <i class="bi bi-gear"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-inner">
+        <!-- Guide Header -->
+        <div class="guide-header">
+          <div class="guide-category-nav">
+            <a href="index.html">Home</a>
+            <i class="bi bi-chevron-right"></i>
+            <a href="category.html" id="category-link">Category</a>
+            <i class="bi bi-chevron-right"></i>
+            <span>Current Guide</span>
+          </div>
+          
+          <div class="guide-top-actions">
+            <button class="btn-action" id="btn-save">
+              <i class="bi bi-bookmark"></i>
+              <span>Save</span>
+            </button>
+            <button class="btn-action" id="btn-share">
+              <i class="bi bi-share"></i>
+              <span>Share</span>
+            </button>
+            <button class="btn-action" id="btn-print">
+              <i class="bi bi-printer"></i>
+              <span>Print</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Guide Content -->
+        <div class="guide-content">
+          <!-- Title Section -->
+          <div class="guide-title-section">
+            <h1>How to Fix a Slow Laptop</h1>
+            
+            <div class="guide-meta">
+              <div class="guide-meta-item">
+                <i class="bi bi-speedometer"></i>
+                <span>Difficulty: Intermediate</span>
+              </div>
+              <div class="guide-meta-item">
+                <i class="bi bi-clock"></i>
+                <span>Time Required: 30-45 minutes</span>
+              </div>
+              <div class="guide-meta-item">
+                <i class="bi bi-star-fill"></i>
+                <span>Rating: 4.8 (124 reviews)</span>
+              </div>
+              <div class="guide-meta-item">
+                <i class="bi bi-person"></i>
+                <span>Author: TechExpert</span>
+              </div>
+            </div>
+            
+            <p class="guide-description">
+              Is your laptop running slower than usual? This comprehensive guide will help you identify and fix common issues that slow down your computer's performance. Follow these steps to get your laptop back to optimal speed.
+            </p>
+          </div>
+          
+          <!-- Video Tutorial -->
+          <section class="video-tutorial-section">
+            <h2>Video Overview</h2>
+            <div class="video-container">
+              <video id="tutorial-video" controls poster="https://via.placeholder.com/1280x720/e0e0e0/808080?text=Tutorial+Video"></video>
+              <div id="video-placeholder" class="video-placeholder">
+                <i class="bi bi-play-circle"></i>
+                <span>Click to Play Tutorial</span>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Tools & Materials -->
+          <section class="tools-materials-section">
+            <h2>Tools & Materials Needed</h2>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-icon">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <div class="tool-name">Your Laptop</div>
+              </div>
+              
+              <div class="tool-item">
+                <div class="tool-icon">
+                  <i class="bi bi-wrench"></i>
+                </div>
+                <div class="tool-name">System Cleanup Software</div>
+              </div>
+              
+              <div class="tool-item">
+                <div class="tool-icon">
+                  <i class="bi bi-hdd"></i>
+                </div>
+                <div class="tool-name">External Storage (Optional)</div>
+              </div>
+              
+              <div class="tool-item">
+                <div class="tool-icon">
+                  <i class="bi bi-wifi"></i>
+                </div>
+                <div class="tool-name">Internet Connection</div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Steps Section -->
+          <section class="steps-section">
+            <h2>Step-by-Step Instructions</h2>
+            
+            <!-- Step 1 -->
+            <div class="step-container">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Check for Resource-Heavy Applications</h3>
+                <p>First, identify which applications might be consuming excessive system resources. This is often the most common cause of a suddenly slow laptop.</p>
+                
+                <div class="step-instructions">
+                  <ol>
+                    <li>Right-click on the taskbar and select <kbd>Task Manager</kbd> or press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd>.</li>
+                    <li>Click on the "Processes" tab to view all running applications.</li>
+                    <li>Click on the "CPU", "Memory", or "Disk" column header to sort processes by resource usage.</li>
+                    <li>Identify applications consuming high resources (typically displayed in red or orange).</li>
+                    <li>Right-click on resource-heavy applications that you're not actively using and select "End task".</li>
+                  </ol>
+                </div>
+                
+                <div class="step-image">
+                  <img src="https://via.placeholder.com/800x500/e0e0e0/808080?text=Task+Manager+Screenshot" alt="Task Manager showing resource usage">
+                </div>
+                
+                <div class="step-tips">
+                  <h4><i class="bi bi-lightbulb"></i> Pro Tip</h4>
+                  <p>Check the "Startup" tab in Task Manager to see which applications launch automatically with Windows. Disable non-essential applications to improve boot time and overall performance.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="step-container">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Clean Up Temporary Files</h3>
+                <p>Temporary files accumulate over time and can significantly slow down your laptop. Clearing these files can free up disk space and improve performance.</p>
+                
+                <div class="step-instructions">
+                  <ol>
+                    <li>Press <kbd>Windows</kbd> + <kbd>R</kbd> to open the Run dialog box.</li>
+                    <li>Type <kbd>%temp%</kbd> and press Enter to open the Temp folder.</li>
+                    <li>Press <kbd>Ctrl</kbd> + <kbd>A</kbd> to select all files, then press <kbd>Delete</kbd>.</li>
+                    <li>Skip any files that are currently in use (you'll receive a notification).</li>
+                    <li>Empty the Recycle Bin by right-clicking on the desktop icon and selecting "Empty Recycle Bin".</li>
+                  </ol>
+                </div>
+                
+                <div class="step-image">
+                  <img src="https://via.placeholder.com/800x500/e0e0e0/808080?text=Disk+Cleanup+Screen" alt="Disk Cleanup utility">
+                </div>
+                
+                <div class="step-tips">
+                  <h4><i class="bi bi-lightbulb"></i> Pro Tip</h4>
+                  <p>You can also use the built-in Disk Cleanup utility by typing "Disk Cleanup" in the Windows search bar. This tool can help you remove additional temporary files, system files, and other unnecessary data.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="step-container">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Update Your Operating System and Drivers</h3>
+                <p>Outdated operating systems and drivers can cause performance issues. Keeping your system up-to-date ensures you have the latest performance improvements and bug fixes.</p>
+                
+                <div class="step-instructions">
+                  <ol>
+                    <li>For Windows: Go to Settings > Update & Security > Windows Update and click "Check for updates".</li>
+                    <li>For macOS: Click the Apple menu > System Preferences > Software Update.</li>
+                    <li>Install any available updates and restart your computer if prompted.</li>
+                    <li>For drivers, visit your laptop manufacturer's website to download the latest drivers for your specific model.</li>
+                  </ol>
+                </div>
+                
+                <div class="step-image">
+                  <img src="https://via.placeholder.com/800x500/e0e0e0/808080?text=Windows+Update+Screen" alt="Windows Update screen">
+                </div>
+                
+                <div class="step-warnings">
+                  <h4><i class="bi bi-exclamation-triangle"></i> Important Note</h4>
+                  <p>Before updating drivers, create a system restore point in case any issues arise. Go to Control Panel > System > System Protection > Create to make a restore point.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="step-container">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Scan for Malware and Viruses</h3>
+                <p>Malware and viruses can significantly impact your laptop's performance by running background processes, stealing resources, and corrupting system files.</p>
+                
+                <div class="step-instructions">
+                  <ol>
+                    <li>Use Windows Security (built-in) or your preferred antivirus software.</li>
+                    <li>For Windows Security: Go to Start > Settings > Update & Security > Windows Security > Virus & threat protection.</li>
+                    <li>Click "Quick scan" to perform a basic scan or "Scan options" for more thorough scans.</li>
+                    <li>Follow any on-screen instructions if threats are detected.</li>
+                    <li>Consider running a secondary scan with a different antimalware tool like Malwarebytes for thorough protection.</li>
+                  </ol>
+                </div>
+                
+                <div class="step-image">
+                  <img src="https://via.placeholder.com/800x500/e0e0e0/808080?text=Antivirus+Scan" alt="Antivirus scan in progress">
+                </div>
+                
+                <div class="step-tips">
+                  <h4><i class="bi bi-lightbulb"></i> Pro Tip</h4>
+                  <p>Schedule regular scans (at least weekly) to keep your laptop protected. Most antivirus software allows you to set up automatic scans during times when you're not using your computer.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Step 5 -->
+            <div class="step-container">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3>Optimize Disk Performance</h3>
+                <p>Over time, files on your hard drive become fragmented, causing your laptop to work harder to access them. Optimizing your disk can improve read/write speeds.</p>
+                
+                <div class="step-instructions">
+                  <ol>
+                    <li>Open File Explorer and right-click on your main drive (usually C:).</li>
+                    <li>Select "Properties" and go to the "Tools" tab.</li>
+                    <li>Under "Optimize and defragment drive," click "Optimize."</li>
+                    <li>Select your drive and click "Analyze" to check fragmentation levels.</li>
+                    <li>If fragmentation is high (over 10%), click "Optimize" to defragment the drive.</li>
+                    <li>Note: If you have an SSD, Windows will automatically use TRIM instead of defragmentation.</li>
+                  </ol>
+                </div>
+                
+                <div class="step-image">
+                  <img src="https://via.placeholder.com/800x500/e0e0e0/808080?text=Disk+Defragmentation" alt="Disk defragmentation tool">
+                </div>
+                
+                <div class="step-warnings">
+                  <h4><i class="bi bi-exclamation-triangle"></i> Important Note</h4>
+                  <p>Defragmentation is beneficial for traditional hard drives (HDD) but unnecessary and potentially harmful for solid-state drives (SSD). Windows 10 and 11 automatically detect your drive type and use the appropriate optimization method.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Troubleshooting Section -->
+          <section class="troubleshooting-section">
+            <h2>Common Issues & Troubleshooting</h2>
+            
+            <div class="accordion" id="troubleshootingAccordion">
+              <!-- Issue 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Laptop is still slow after completing all steps
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#troubleshootingAccordion">
+                  <div class="accordion-body">
+                    <p>If your laptop remains slow after following all the steps, consider these additional actions:</p>
+                    <ul>
+                      <li>Check your laptop's hardware specifications against the requirements of your most-used software.</li>
+                      <li>Consider upgrading your RAM or switching to an SSD if you have an older HDD.</li>
+                      <li>Perform a system reset as a last resort (Windows: Settings > Update & Security > Recovery > Reset this PC).</li>
+                      <li>Consult with a professional technician if you suspect hardware issues.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Issue 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Laptop becomes hot and slows down during use
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#troubleshootingAccordion">
+                  <div class="accordion-body">
+                    <p>Overheating is a common cause of performance issues. Try these solutions:</p>
+                    <ul>
+                      <li>Ensure your laptop has proper ventilation; don't use it on soft surfaces like beds or couches.</li>
+                      <li>Use a laptop cooling pad to improve airflow.</li>
+                      <li>Clean dust from vents and fans using compressed air (turn off and unplug the laptop first).</li>
+                      <li>Check if any high-performance applications or games are running unnecessarily.</li>
+                      <li>Consider replacing thermal paste on older laptops (this may require professional assistance).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Issue 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Specific programs crash or freeze frequently
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#troubleshootingAccordion">
+                  <div class="accordion-body">
+                    <p>If particular programs are problematic, try these steps:</p>
+                    <ul>
+                      <li>Update the problematic program to the latest version.</li>
+                      <li>Uninstall and reinstall the application.</li>
+                      <li>Check for compatibility issues with your operating system.</li>
+                      <li>Run the program in compatibility mode (right-click exe file > Properties > Compatibility).</li>
+                      <li>Contact the software developer's support team for program-specific solutions.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Conclusion Section -->
+          <section class="conclusion-section">
+            <h2>Conclusion</h2>
+            <p>
+              By following these steps, you should notice a significant improvement in your laptop's performance. Remember that regular maintenance is key to keeping your laptop running smoothly. Schedule monthly cleanup sessions to prevent performance issues before they become severe. If your laptop is several years old and still experiencing slowdowns after trying all these steps, it might be time to consider hardware upgrades or a new laptop altogether.
+            </p>
+            
+            <div class="related-guides">
+              <h3>Related Guides</h3>
+              
+              <div class="related-guides-grid">
+                <a href="#" class="related-guide-item">
+                  <div class="related-guide-image">
+                    <img src="https://via.placeholder.com/300x200/e0e0e0/808080?text=RAM+Upgrade" alt="RAM Upgrade">
+                  </div>
+                  <div class="related-guide-info">
+                    <h4>How to Upgrade Laptop RAM</h4>
+                    <p>Advanced • 45 min</p>
+                  </div>
+                </a>
+                
+                <a href="#" class="related-guide-item">
+                  <div class="related-guide-image">
+                    <img src="https://via.placeholder.com/300x200/e0e0e0/808080?text=SSD+Install" alt="SSD Installation">
+                  </div>
+                  <div class="related-guide-info">
+                    <h4>Installing an SSD in Your Laptop</h4>
+                    <p>Intermediate • 60 min</p>
+                  </div>
+                </a>
+                
+                <a href="#" class="related-guide-item">
+                  <div class="related-guide-image">
+                    <img src="https://via.placeholder.com/300x200/e0e0e0/808080?text=Windows+Optimization" alt="Windows Optimization">
+                  </div>
+                  <div class="related-guide-info">
+                    <h4>Advanced Windows Optimization Techniques</h4>
+                    <p>Advanced • 30 min</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Feedback Section -->
+          <section class="feedback-section">
+            <h2>Was This Guide Helpful?</h2>
+            
+            <div class="rating-container">
+              <div class="star-rating">
+                <i class="bi bi-star" data-rating="1"></i>
+                <i class="bi bi-star" data-rating="2"></i>
+                <i class="bi bi-star" data-rating="3"></i>
+                <i class="bi bi-star" data-rating="4"></i>
+                <i class="bi bi-star" data-rating="5"></i>
+              </div>
+              <p class="rating-text">Select rating</p>
+            </div>
+            
+            <div class="feedback-form">
+              <textarea placeholder="Share your experience or suggest improvements..."></textarea>
+              <button class="btn btn-primary">Submit Feedback</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="guide.js"></script>
+</body>
+</html>
