@@ -24,7 +24,7 @@ function initVideoPlayer() {
   
   videoPlaceholder.addEventListener('click', function() {
     // In a real implementation, you'd set the actual video source here
-    videoPlayer.src = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+    videoPlayer.src = "https://www.youtube.com/watch?v=a3ICNMQW7Ok;
     
     // Hide placeholder and autoplay video
     videoPlaceholder.style.display = 'none';
